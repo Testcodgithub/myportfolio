@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java full stack Web developer</p>
+                <h1>Hi, I'am <span>Ameerunnisa</span><br>Form India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------AboutMe-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Myphoto1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> I’m a skilled <strong>Full Stack Developer</strong> passionate about crafting efficient, 
+                        user-centric web applications. Proficient in <strong>Java</strong>, <strong>Spring</strong>, 
+                        <strong>Hibernate</strong>, <strong>MySQL</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>WordPress</strong>, 
+                        and <strong>RPA</strong>, I build robust back-end systems and dynamic front-end interfaces. My experience includes developing 
+                        <strong>Java web applications</strong>, designing responsive websites, and automating processes with 
+                        <strong>Robotic Process Automation</strong>.
+                    </p>
+                    <p>I specialize in <strong>Spring Framework</strong> and <strong>Hibernate</strong> for seamless database integration, 
+                        <strong>MySQL</strong> for data management, and <strong>WordPress</strong> for customizable CMS solutions. 
+                        My RPA expertise enhances business efficiency through automation. Based in [Your City], 
+                        I deliver innovative <strong>full stack development</strong> solutions with clean code and a collaborative approach.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language: </span> Core JAVA, Advance JAVA</li>
+                            <li><span>Web Technologies: </span> HTML, CSS, JavaScript</li>
+                            <li><span>Databases: </span> MySQL</li>
+                            <li><span>Frameworks: </span> Spring, Hibernate</li>
+                            <li><span>Tools & Platforms: </span> Eclipse, visual studio code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2024-January 2025</span> I completed JAVA Full Stack Web Developer Training At Tap Accademy</li>
+                            <li><span>March 2024-May 2024</span> I completed digital Markating Coures at FLM</li>
+                            <li><span>December 2023-January 2024</span> Web Developer Intership at Prodigy InfoTech</li>
+                            <li><span>June 2023-November 2023</span> Robotic Process Automation Developer(RPA), Training and Intership at Society for Employment Generation & Enterprise Developement in Andhra Pradesh</i>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span> B.Tech(Electronic Communication Engineering)</li>
+                            <li><span>2017-2019</span> Intermidate</li>
+                            <li><span>2016-2017</span> SSC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="servicces-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java full stack web Developer</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                        tincidunt sit amet sapien quis.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Fornt-end Developer</h2>
+                    <p>Design responsive, user-friendly interfaces with HTML and CSS, JavaScript.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Back-end Developer</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                        tincidunt sit amet sapien quis.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+           <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="/images/foodappwork.jpg">
+                <div class="layer">
+                    <h3>Food App Application</h3>
+                    <p>Combine front-end and back-end skills to deliver complete web solutions
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/fornt-endWork.jpg">
+                <div class="layer">
+                    <h3>Fornt-end Application</h3>
+                    <p>Design responsive, user-friendly interfaces with HTML and CSS, JavaScript.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/Back-endwork.jpg">
+                <div class="layer">
+                    <h3>Back-end Application</h3>
+                    <p>Build scalable server-side applications using Java, Spring, and Hibernate
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+           </div> 
+           <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ameerunnisabegummirja@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6305552364</p>
+                    <div class="soical-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61556655011086"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Mirja Ameerunnisa Begum-ECE.docx" download class="btn btn2">Downloat cv</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                       <input type="text" name="Name" placeholder=" Enter Your Full Name" required>
+                       <input type="text" name="Email" placeholder="Enter your Email"  required>
+                       <textarea name="Message"  rows="6" placeholder="Enter your Message"></textarea>
+                       <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Copyrigth @ Ameerunnisa. Made with <i class="fa-solid fa-heart"></i> by Easy tutorials</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }   
+    </script>
+    <script>
+        var sidemeu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbyir4Bbt1FQa63wGPIwjmCOWKin8aEpbVJQFl5oJxE7_rBSedPFwoFTYHuFXMCwR1aE/exec'
+       const form = document.forms['submit-to-google-sheet']
+       const msg=document.getElementById("msg");
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+          })
+         .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
